@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Projects // Khem Chhetri</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="assets/site.css"/>
+</head>
+<body>
+
+<div id="scroll-rail"><div class="track-fill" id="rail-fill"></div><div class="rail-car" id="rail-car">🚗</div></div>
+
+<div id="nav-pop" onclick="toggleMenu(event)">
+  <span class="dot"></span>
+  <span class="logo-txt">KC</span>
+  <span class="burger"><span></span><span></span><span></span></span>
+</div>
+<div id="menu-dropdown">
+  <a href="index.html">Home</a>
+  <a href="index.html#about">About</a>
+  <a href="index.html#skills">Skills</a>
+  <a href="index.html#experience">Experience</a>
+  <a href="projects.html" class="active">Projects</a>
+  <a href="contact.html">Contact</a>
+  <div class="menu-foot">POKHARA, NEPAL &middot; AVAILABLE FOR WORK</div>
+</div>
+
+<div id="theme-toggle" onclick="toggleTheme()" title="Toggle light / dark">
+  <div class="knob" id="theme-knob">🌙</div>
+</div>
+
+<section class="pt-32 pb-10 px-6 md:px-10" style="background:var(--ink);">
+  <div class="max-w-6xl mx-auto">
+    <span class="section-kicker">Selected work</span>
+    <h1 class="section-title text-white text-4xl md:text-6xl">Projects</h1>
+  </div>
+</section>
+
+<section class="reveal in" style="background:var(--cream);">
+  <div class="max-w-6xl mx-auto px-6 md:px-10 py-16 space-y-6">
+
+    <div class="project-card grid md:grid-cols-[auto_1fr_auto] gap-8 items-center p-8">
+      <div class="text-4xl text-center">🤖</div>
+      <div>
+        <span class="project-row-badge mb-3 inline-block">AI &middot; SaaS</span>
+        <div class="project-row-title text-2xl mb-2">HamroChatbot</div>
+        <div class="project-row-desc max-w-lg mb-3">A Next.js chatbot platform with an embeddable widget, knowledge-base upload, and payment integration for selling chatbot access.</div>
+        <div class="flex flex-wrap gap-1.5"><span>Next.js</span><span>Stripe</span><span>Widget SDK</span><span>KB Upload</span></div>
+      </div>
+      <div class="flex flex-col gap-2.5 min-w-[150px]">
+        <a class="plink live" href="https://hamrochatbot.vercel.app" target="_blank" rel="noopener">Live Demo ↗</a>
+        <a class="plink code" href="#" target="_blank" rel="noopener">View Code ↗</a>
+      </div>
+    </div>
+
+    <div class="project-card grid md:grid-cols-[auto_1fr_auto] gap-8 items-center p-8">
+      <div class="text-4xl text-center">🛒</div>
+      <div>
+        <span class="project-row-badge mb-3 inline-block">Full-Stack &middot; E-commerce</span>
+        <div class="project-row-title text-2xl mb-2">Product Catalog</div>
+        <div class="project-row-desc max-w-lg mb-3">A full e-commerce app with product upload/delete, cart, login &amp; signup, and a separate admin login and dashboard.</div>
+        <div class="flex flex-wrap gap-1.5"><span>Next.js</span><span>Auth</span><span>Cart</span><span>Admin Panel</span></div>
+      </div>
+      <div class="flex flex-col gap-2.5 min-w-[150px]">
+        <a class="plink live" href="https://product-catalog-q88b.vercel.app" target="_blank" rel="noopener">Live Demo ↗</a>
+        <a class="plink code" href="#" target="_blank" rel="noopener">View Code ↗</a>
+      </div>
+    </div>
+
+    <p class="font-mono text-xs" style="color:var(--muted);">// "View Code" links go to # &mdash; send me your GitHub repo URLs and I'll wire them up.</p>
+  </div>
+</section>
+
+<footer class="px-6 md:px-10 md:pl-20 py-6 flex justify-between items-center flex-wrap gap-2">
+  <span class="font-mono text-xs tracking-wide">© 2026 <em>Khem Chhetri</em></span>
+  <span class="font-mono text-xs tracking-wide">BUILT WITH NEXT.JS</span>
+</footer>
+
+<div id="music-widget">
+  <button class="m-btn" id="music-btn" onclick="toggleMusic()">▶</button>
+  <div class="bars"><span></span><span></span><span></span></div>
+  <div class="m-label">Flute theme</div>
+  <audio id="bg-audio" loop src="assets/theme-music.mp3"></audio>
+</div>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
